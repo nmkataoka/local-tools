@@ -41,6 +41,16 @@ Once set up, just ask Claude Code naturally:
 
 Claude Code will call the `codex_review` or `codex_exec` tools automatically.
 
+I use this prompt in my CLAUDE.md prompt to have Claude automatically ask for reviews after implementation:
+
+```
+## Preliminary Code Reviews
+
+Whenever you make a large batch of code changes, you should proactively request an external review using the `codex_review` tool. Use this only for code, not for specs. Think of this as a somewhat slow, accurate technical reviewer. It's best to request it while you have other things to work on or at the end of a large chunk of work due to the slowness. You do not need to implement every bit of review feedback, it is just to help inform you. They are not always aware of project priorities. If you're unsure, ask for help on whether the review feedback should be followed.
+
+If you are explicitly asked to review code, you should review the code yourself.
+```
+
 ## Tools
 
 | Tool | Description |
